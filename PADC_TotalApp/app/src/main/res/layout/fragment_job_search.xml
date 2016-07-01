@@ -14,6 +14,7 @@
         android:background="@android:color/white">
 
         <Switch
+            android:id="@+id/sw_job_alert"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingMultiplier="1.2"

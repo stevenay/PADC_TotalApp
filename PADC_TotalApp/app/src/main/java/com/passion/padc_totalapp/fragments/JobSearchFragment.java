@@ -12,6 +12,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.Toast;
 
 import com.passion.padc_totalapp.R;
 import com.passion.padc_totalapp.adapters.JobAdapter;
@@ -51,6 +54,14 @@ public class JobSearchFragment extends Fragment {
                         swipeRefreshLayout.setRefreshing(false);
                     }
                 }, 3000);
+            }
+        });
+
+        Switch swJobAlert = (Switch) view.findViewById(R.id.sw_job_alert);
+        swJobAlert.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Toast.makeText(getContext(), "Switch changed.", Toast.LENGTH_SHORT).show();
             }
         });
 
