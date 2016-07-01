@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorSecondary">#FF009FDB</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FF009FDB</color>
 
     <color name="textBlackFull">#333333</color>
     <color name="colorWunZinn">#e8bf2e</color>

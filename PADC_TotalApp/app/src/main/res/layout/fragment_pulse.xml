@@ -109,10 +109,10 @@
             android:id="@+id/cd_news1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_medium"
             android:layout_marginTop="248dp"
-            android:layout_marginBottom="@dimen/margin_medium"
             android:background="@android:color/white">
 
             <RelativeLayout
@@ -121,6 +121,7 @@
                 android:padding="16dp">
 
                 <LinearLayout
+                    android:id="@+id/ll_category"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true">
@@ -129,13 +130,13 @@
                         android:id="@+id/tv_editor_pick"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:gravity="left"
                         android:paddingRight="@dimen/margin_medium"
-                        android:layout_weight="1"
+                        android:text="Editor's Pick"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/text_regular_2x"
-                        android:textStyle="bold"
-                        android:text="Editor's Pick"/>
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/tv_article_time"
@@ -143,17 +144,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:gravity="center"
-                        android:textSize="14sp"
-                        android:text="1h"/>
+                        android:text="1h"
+                        android:textSize="14sp"/>
 
                 </LinearLayout>
+
+                <View
+                    android:id="@+id/v_divider"
+                    style="@style/Divider"
+                    android:layout_width="64dp"
+                    android:layout_below="@id/ll_category"
+                    android:layout_marginTop="@dimen/margin_medium_2"/>
 
                 <TextView
                     android:id="@+id/tv_article_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_below="@id/v_divider"
                     android:fontFamily="sans-serif-light"
                     android:text="China Has High-Performing Blar Blar Blar"
                     android:textColor="@android:color/black"
@@ -187,9 +196,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/cd_news1"
+            android:layout_marginBottom="@dimen/margin_medium"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginRight="@dimen/margin_medium"
-            android:layout_marginBottom="@dimen/margin_medium"
             android:background="@android:color/white">
 
             <RelativeLayout
@@ -198,6 +207,7 @@
                 android:padding="16dp">
 
                 <LinearLayout
+                    android:id="@+id/ll_category1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true">
@@ -206,13 +216,13 @@
                         android:id="@+id/tv_editor_pick1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:gravity="left"
                         android:paddingRight="@dimen/margin_medium"
-                        android:layout_weight="1"
+                        android:text="Trending in the Computer Software industry"
                         android:textColor="@android:color/black"
                         android:textSize="@dimen/text_regular_2x"
-                        android:textStyle="bold"
-                        android:text="Trending in the Computer Software industry"/>
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/tv_article_time1"
@@ -220,17 +230,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0"
                         android:gravity="center"
-                        android:textSize="14sp"
-                        android:text="3h"/>
+                        android:text="3h"
+                        android:textSize="14sp"/>
 
                 </LinearLayout>
+
+                <View
+                    android:id="@+id/v_divider1"
+                    style="@style/Divider"
+                    android:layout_width="64dp"
+                    android:layout_below="@id/ll_category1"
+                    android:layout_marginTop="@dimen/margin_medium_2"/>
 
                 <TextView
                     android:id="@+id/tv_article_title1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/v_divider1"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/margin_medium_2"
                     android:fontFamily="sans-serif-light"
                     android:text="The World in 60 Seconds: Brexit Edition"
                     android:textColor="@android:color/black"

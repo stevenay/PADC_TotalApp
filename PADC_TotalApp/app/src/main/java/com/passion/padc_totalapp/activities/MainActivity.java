@@ -1,6 +1,5 @@
 package com.passion.padc_totalapp.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -24,8 +23,6 @@ import com.passion.padc_totalapp.fragments.WunZinnFragment;
 import com.passion.padc_totalapp.fragments.YoteSinFragment;
 import com.passion.padc_totalapp.utils.MMFontUtils;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -44,7 +41,7 @@ public class MainActivity extends AppCompatActivity
         final ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayShowTitleEnabled(false);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -151,7 +148,7 @@ public class MainActivity extends AppCompatActivity
     private void navigateToPulse() {
         PulseFragment fragment = PulseFragment.newInstance();
         this.tvScreenTitle.setText("PADC - Pulse");
-        this.fab.setVisibility(View.VISIBLE);
+        this.fab.setVisibility(View.GONE);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fl_container, fragment)
                 .commit();

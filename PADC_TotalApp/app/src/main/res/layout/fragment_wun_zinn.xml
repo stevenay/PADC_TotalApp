@@ -150,8 +150,8 @@
                             android:id="@+id/iv_bookcover"
                             android:layout_width="120dp"
                             android:layout_height="168dp"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp"
+                            android:paddingTop="@dimen/margin_medium"
+                            android:paddingBottom="@dimen/margin_medium"
                             android:background="@android:color/white"
                             android:elevation="2dp"
                             android:src="@drawable/rework_book_cover"/>
@@ -164,7 +164,7 @@
                             android:layout_margin="@dimen/margin_small"
                             android:gravity="center_horizontal"
                             android:textStyle="bold"
-                            android:textSize="16sp"
+                            android:textSize="@dimen/text_regular_2x"
                             android:text="Rework"/>
 
                     </RelativeLayout>
@@ -185,8 +185,8 @@
                             android:id="@+id/iv_bookcover2"
                             android:layout_width="120dp"
                             android:layout_height="168dp"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp"
+                            android:paddingTop="@dimen/margin_medium"
+                            android:paddingBottom="@dimen/margin_medium"
                             android:background="@android:color/white"
                             android:elevation="2dp"
                             android:src="@drawable/false_stars_book_cover"/>
@@ -220,8 +220,8 @@
                             android:id="@+id/iv_bookcover3"
                             android:layout_width="120dp"
                             android:layout_height="168dp"
-                            android:paddingTop="8dp"
-                            android:paddingBottom="8dp"
+                            android:paddingTop="@dimen/margin_medium"
+                            android:paddingBottom="@dimen/margin_medium"
                             android:background="@android:color/white"
                             android:elevation="2dp"
                             android:src="@drawable/steve_job_book_cover"/>
@@ -234,7 +234,7 @@
                             android:layout_margin="@dimen/margin_small"
                             android:gravity="center_horizontal"
                             android:textStyle="bold"
-                            android:textSize="16sp"
+                            android:textSize="@dimen/text_regular_2x"
                             android:text="The innovation secrets of Steve Jobs"/>
 
                     </RelativeLayout>

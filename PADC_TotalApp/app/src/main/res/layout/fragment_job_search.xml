@@ -9,8 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:padding="24dp"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:padding="@dimen/margin_large"
         android:background="@android:color/white">
 
         <Switch
@@ -19,7 +19,7 @@
             android:lineSpacingMultiplier="1.2"
             android:text="Creat a job alert"
             android:drawableLeft="@drawable/ic_notifications_active_black_24dp"
-            android:drawablePadding="4dp"/>
+            android:drawablePadding="@dimen/margin_small"/>
 
     </LinearLayout>
 
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingBottom="8dp"
+            android:paddingBottom="@dimen/margin_medium"
             android:paddingLeft="@dimen/margin_small"
             android:paddingRight="@dimen/margin_small"
             android:scrollbarStyle="outsideOverlay"/>
