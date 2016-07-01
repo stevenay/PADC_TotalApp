@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            tools:context=".fragments.LinkedInFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.passion.padc_totalapp.fragments.PulseFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/android_background">
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_settings_black_24dp"
+                android:drawableTint="@android:color/white"
+                android:elevation="0dp"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/btn_settings"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:drawableTint="@android:color/white"
+                android:elevation="0dp"/>
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_toLeftOf="@id/btn_search"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_person_outline_black_24dp"
+                android:drawableTint="@android:color/white"
+                android:elevation="0dp"/>
+
+            <Button
+                android:id="@+id/btn_circle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_radio_button_checked_black_24dp"
+                android:drawableTint="@android:color/white"
+                android:elevation="0dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_person_photo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_person_photo"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Good morning, AungPyae"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_heading_1x"/>
+
+            <TextView
+                android:id="@+id/tv_top_stories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_greeting"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Here are your top stories for the day"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_regular_2x"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cd_news1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="248dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/tv_editor_pick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingRight="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:textStyle="bold"
+                        android:text="Editor's Pick"/>
+
+                    <TextView
+                        android:id="@+id/tv_article_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="1h"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_article_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="China Has High-Performing Blar Blar Blar"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/tv_article_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_article_title"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:text="Gordon Orr / 131 shares"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="178dp"
+                    android:layout_below="@id/tv_article_writer"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/news1"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cd_news2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_news1"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/tv_editor_pick1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingRight="@dimen/margin_medium"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_regular_2x"
+                        android:textStyle="bold"
+                        android:text="Trending in the Computer Software industry"/>
+
+                    <TextView
+                        android:id="@+id/tv_article_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="3h"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_article_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="The World in 60 Seconds: Brexit Edition"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/tv_article_writer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_article_title1"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:gravity="center"
+                    android:text="Ian Bremew / 111 shares"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="178dp"
+                    android:layout_below="@id/tv_article_writer1"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/news2"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

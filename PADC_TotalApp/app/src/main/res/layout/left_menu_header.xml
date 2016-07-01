@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:background="@drawable/drawer_background"
+                android:paddingTop="25dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFffffff"
+        android:src="@drawable/avatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="14sp"
+        android:text="aungpyaephyo24@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorSecondary">#FF009FDB</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textBlackFull">#333333</color>
+    <color name="colorWunZinn">#e8bf2e</color>
+    <color name="textWunZinn">#FF9C954E</color>
+
+    <color name="textDarkerGray">#555555</color>
+    <color name="colorButtonYoteSin">#FF129959</color>
+
+</resources>

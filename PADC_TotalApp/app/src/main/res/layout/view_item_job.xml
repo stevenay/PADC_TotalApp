@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_small"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:theme="@style/AppTheme"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/iv_company_logo"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:src="@drawable/sc_logo"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/tv_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@android:color/black"
+                android:text="Developer / Senior Developer"
+                />
+
+            <TextView
+                android:id="@+id/tv_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_job_title"
+                android:paddingTop="4dp"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#444444"
+                android:text="Standard Chartered Bank"
+                />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_company_name"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@android:color/darker_gray"
+                android:text="Singapore"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@android:color/darker_gray"
+                android:text="3w"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="right"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                android:background="@drawable/textview_rounded_corner"
+                android:textColor="@android:color/white"
+                android:text="New"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
